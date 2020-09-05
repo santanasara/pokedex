@@ -24,7 +24,7 @@ const Header = () => {
       <HeaderText>
         <Title>Pokedex</Title>
         <SubTitle>
-          Search for Pokémon by name or using the National Pokédex number.
+          Search for Pokemon by name or using the National Pokedex number.
         </SubTitle>
       </HeaderText>
     </>

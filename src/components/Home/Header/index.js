@@ -10,6 +10,7 @@ import {
 } from './styles';
 
 const icons = require.context('../../../assets/icons');
+
 const Header = () => {
   return (
     <>

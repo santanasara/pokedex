@@ -19,7 +19,22 @@ module.exports = {
         },
       },
       {
+        test: /\.svg$/,
+        exclude: {
+          or: [
+            path.resolve(__dirname, 'src/assets/icons'),
+            path.resolve(__dirname, 'src/assets/patterns'),
+          ],
+        },
+        use: ['@svgr/webpack', 'url-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.(png|svg|jpg|gif|ico)$/,
+        exclude: path.resolve(__dirname, 'src/assets/types'),
         use: {
           loader: 'file-loader',
           options: {
@@ -35,6 +50,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      favicon: './src/assets/patterns/pokeball.svg',
     }),
   ],
 };

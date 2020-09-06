@@ -4,3 +4,6 @@ body {
 *{
     font-family: 'Tahoma', Geneva, sans-serif;
 }
+.iconType path{
+fill: #fff;
+}

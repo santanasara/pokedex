@@ -48,12 +48,14 @@ export const Container = styled.div`
   align-items: center;
   ${({ type }) => handleColorType(type)};
   height: 3.5vh;
-  padding: 0 1em;
+  min-height: 40px;
+  padding: 0 2vw;
   margin-top: 0.5em;
   margin-right: 0.5em;
   border-radius: 5px;
   @media (min-width: 1050px) {
     height: 2vh;
+    min-height: 0;
     padding: 2px 5px;
     margin: 0;
     margin-top: 0.2em;
@@ -65,7 +67,7 @@ export const Container = styled.div`
 export const Text = styled.p`
   margin: 0;
   margin-left: 0.5em;
-  font-size: 1.7em;
+  font-size: calc(12px + 0.8vh);
   color: white;
   @media (min-width: 1050px) {
     font-size: 0.8em;

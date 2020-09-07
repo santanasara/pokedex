@@ -44,7 +44,7 @@ const handleColorType = (type) => {
 };
 export const Card = styled.div`
   position: relative;
-  margin: 5em;
+  margin: 5%;
   border-radius: 10px;
   max-height: 30vh;
   ${({ type }) => handleColorType(type)};
@@ -53,6 +53,10 @@ export const Card = styled.div`
     height: 120px;
     width: 30%;
     margin: 1em 0.5em;
+    &:last-of-type {
+      margin-right: auto;
+      margin-left: 2.4em;
+    }
   }
 `;
 export const PokemonImage = styled.img`
@@ -82,24 +86,15 @@ export const Pokeball = styled.img`
 `;
 export const TextWrapper = styled.div`
   display: inline-block;
-  margin: 2.5em 2.5em;
-  @media (min-width: 1050px) {
-    margin: 1em 1em;
-  }
+  margin: 5%;
 `;
 export const Name = styled.h2`
   margin: 0;
-  font-size: 4em;
+  font-size: 3vh;
   color: #fff;
-  @media (min-width: 1050px) {
-    font-size: 1.5em;
-  }
 `;
 export const Number = styled.p`
   margin: 0;
-  font-size: 2em;
+  font-size: calc(10px + 1vh);
   color: #3b3b3b;
-  @media (min-width: 1050px) {
-    font-size: 0.8em;
-  }
 `;

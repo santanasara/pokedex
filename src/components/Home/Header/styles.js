@@ -33,12 +33,12 @@ export const HeaderMenu = styled.div`
   display: flex;
   justify-content: space-between;
   width: 30%;
-  margin-right: 4em;
-  margin-top: 4em;
+  margin-right: 4%;
+  margin-top: 4%;
 `;
 
 export const HeaderIcon = styled.img`
-  width: 4em;
+  width: 25%;
   height: auto;
   @media (min-width: 1050px) {
     width: 2em;
@@ -46,13 +46,13 @@ export const HeaderIcon = styled.img`
 `;
 
 export const HeaderText = styled.div`
-  margin: 0 5em;
+  margin: 0 5%;
   @media (min-width: 1050px) {
     margin: 0 2.5em;
   }
 `;
 export const Title = styled.h1`
-  font-size: 5em;
+  font-size: calc(36px + 2vh);
   margin: 0;
   @media (min-width: 1050px) {
     font-size: 2.5em;
@@ -60,7 +60,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.p`
-  font-size: 2.5em;
+  font-size: calc(18px + 1vh);
   color: #5c5c5c;
   margin: 0.5em 0;
   @media (min-width: 1050px) {

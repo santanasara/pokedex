@@ -5,9 +5,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   height: 8.2em;
+  max-height: 10vh;
   background-color: #f2f2f2;
-  margin: 3em 5em;
-  padding-left: 3em;
+  margin: 5%;
+  padding-left: 5%;
   border-radius: 10px;
   @media (min-width: 1050px) {
     height: 4em;
@@ -18,7 +19,7 @@ export const Container = styled.div`
 
 export const Icon = styled.img`
   position: absolute;
-  width: 3em;
+  width: calc(12px + 2vh);
   padding-top: 5px;
   height: auto;
   opacity: 50%;
@@ -29,12 +30,12 @@ export const Icon = styled.img`
 `;
 
 export const Input = styled.input`
-  margin-left: 1.5em;
+  margin-left: 7vw;
   width: 90%;
   border: none;
   background: none;
   height: 100%;
-  font-size: 2.5em;
+  font-size: calc(12px + 1.3vh);
   @media (min-width: 1050px) {
     font-size: 1em;
     margin-left: 2.5em;

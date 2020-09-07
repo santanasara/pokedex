@@ -23,7 +23,7 @@ module.exports = {
         exclude: {
           or: [
             path.resolve(__dirname, 'src/assets/icons'),
-            path.resolve(__dirname, 'src/assets/patterns'),
+            path.resolve(__dirname, 'src/assets/patterns/pokeball.svg'),
           ],
         },
         use: ['@svgr/webpack', 'url-loader'],

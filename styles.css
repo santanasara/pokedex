@@ -5,5 +5,12 @@ body {
     font-family: 'Tahoma', Geneva, sans-serif;
 }
 .iconType path{
-fill: #fff;
+    fill: #fff;
+}
+
+@media (min-width: 1050px) {
+    body{
+        margin: 0 auto;
+        width: 80vw;
+    }
 }

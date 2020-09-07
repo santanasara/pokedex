@@ -9,6 +9,11 @@ export const Container = styled.div`
   margin: 3em 5em;
   padding-left: 3em;
   border-radius: 10px;
+  @media (min-width: 1050px) {
+    height: 4em;
+    padding-left: 1em;
+    margin: 0.5em 2.5em;
+  }
 `;
 
 export const Icon = styled.img`
@@ -17,6 +22,10 @@ export const Icon = styled.img`
   padding-top: 5px;
   height: auto;
   opacity: 50%;
+  @media (min-width: 1050px) {
+    width: 2em;
+    padding-top: 2px;
+  }
 `;
 
 export const Input = styled.input`
@@ -26,4 +35,8 @@ export const Input = styled.input`
   background: none;
   height: 100%;
   font-size: 2.5em;
+  @media (min-width: 1050px) {
+    font-size: 1em;
+    margin-left: 2.5em;
+  }
 `;

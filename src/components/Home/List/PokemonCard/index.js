@@ -6,23 +6,26 @@ import {
   Name,
   Number,
   TextWrapper,
-  Pokeball,
+  PatternContainer,
+  PokeballContainer,
 } from './styles';
 import TypeName from '../../../Types/TypeName';
-import pokeball from '../../../../assets/patterns/pokeball.png';
-// import { ReactComponent as SmallPattern } from '../../../../assets/patterns/6x3.svg';
-
-/* const styles = {
-  opacity: '15%',
-  position: 'absolute',
-  left: '30%',
-  top: '-8%',
-}; */
+import Pattern from '../../../Icons/Pattern';
 
 const PokemonCard = ({ pokemon }) => {
   return (
     <Card type={pokemon.type[0]}>
-      {/* <SmallPattern className="iconType" style={styles} /> */}
+      <PatternContainer>
+        <Pattern name="smallDots" width="30%" height="auto" />
+      </PatternContainer>
+      <PokeballContainer>
+        <Pattern
+          name="pokeball"
+          width="auto"
+          height="108%"
+          style={{ margin: '-2% -2% 0 0' }}
+        />
+      </PokeballContainer>
       <TextWrapper>
         <Number>#{pokemon.number}</Number>
         <Name>{pokemon.name}</Name>
@@ -31,7 +34,6 @@ const PokemonCard = ({ pokemon }) => {
         ))}
       </TextWrapper>
       <PokemonImage src={pokemon.ThumbnailImage} />
-      <Pokeball src={pokeball} />
     </Card>
   );
 };

@@ -45,6 +45,7 @@ const handleColorType = (type) => {
 export const Card = styled.div`
   position: relative;
   margin: 5%;
+  margin-top: 7%;
   border-radius: 10px;
   max-height: 30vh;
   ${({ type }) => handleColorType(type)};
@@ -58,6 +59,24 @@ export const Card = styled.div`
       margin-left: 2.4em;
     }
   }
+`;
+
+export const PatternContainer = styled.div`
+  position: absolute;
+  margin-left: 30%;
+  opacity: 20%;
+`;
+
+export const PokeballContainer = styled.div`
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  opacity: 20%;
+
+  z-index: 1;
 `;
 export const PokemonImage = styled.img`
   position: absolute;
@@ -87,6 +106,7 @@ export const Pokeball = styled.img`
 export const TextWrapper = styled.div`
   display: inline-block;
   margin: 5%;
+  z-index: 2;
 `;
 export const Name = styled.h2`
   margin: 0;
